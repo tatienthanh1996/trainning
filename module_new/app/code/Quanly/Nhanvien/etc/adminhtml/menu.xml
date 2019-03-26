@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Quanly_Nhanvien::nhanvien" title="Nhan Vien" module="Quanly_Nhanvien" sortOrder="51"
+             resource="Quanly_Nhanvien::nhanvien"/>
+        <add id="Quanly_Nhanvien::post" title="Manage Posts" module="Quanly_Nhanvien" sortOrder="10"
+             action="quanly_nhanvien/post" resource="Quanly_Nhanvien::post"
+             parent="Quanly_Nhanvien::nhanvien"/>
+        <add id="Quanly_Nhanvien::nhanvien_configuration" title="Configuration" module="Quanly_Nhanvien"
+             sortOrder="99" parent="Quanly_Nhanvien::nhanvien"
+             action="adminhtml/system_config/edit/section/nhanvien"
+             resource="Quanly_Nhanvien::nhanvien_configuration"/>
+    </menu>
+</config>

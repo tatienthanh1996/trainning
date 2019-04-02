@@ -42,7 +42,6 @@
 
 
         <referenceBlock name="copyright" remove="true"/>
-        <referenceBlock name="bugs" remove="true"/>
 
     </body>
 </page>

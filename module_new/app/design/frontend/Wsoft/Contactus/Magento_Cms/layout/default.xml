@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header-wrapper" remove="true"/>
+        <referenceContainer name="main" remove="true"/>
+
+        <referenceContainer name="page.top">
+            <referenceBlock name="navigation.sections" remove="true"/>
+        </referenceContainer>
+
+        <referenceContainer name="main.content">
+            <block  class="Magento\Framework\View\Element\Template" name="new_content"
+                    template="Magento_Cms::content.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="header.container">
+            <referenceBlock name="header.panel.wrapper" remove="true"/>
+            <referenceBlock name="header.panel" remove="true"/>
+            <referenceBlock name="top.search" remove="true"/>
+            <referenceBlock name="checkout.cart.item.price.sidebar" remove="true"/>
+            <block class="Magento\Framework\View\Element\Template" name="new_header"
+                   template="Magento_Cms::header.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="footer">
+            <referenceBlock name="form.subscribe" remove="true"/>
+            <referenceBlock name="footer_links" remove="true"/>
+            <referenceBlock name="copyright" remove="true"/>
+            <referenceBlock name="report.bugs" remove="true"/>
+            <block class="Magento\Framework\View\Element\Template" name="new_footer"
+                   template="Magento_Cms::footer.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

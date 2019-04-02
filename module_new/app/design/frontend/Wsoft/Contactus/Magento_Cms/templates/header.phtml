@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(window).scroll(function(){
+            if($(window).scrollTop() - $(".menu").position().top < 0){
+                $('.menu_top').css({'position':'relative'});
+            }else{
+                $('.menu_top').css({'position':'fixed'});
+            }
+        });
+
+    })
+</script>
+<div class="header_menu">
+    <div class="menu" />
+    <form class="menu_top">
+        <img src="https://wsoftpro.com/pub/static/frontend/WSP/default/en_US/images/wsp-logo-2.png " id="logo"/>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Job</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our projects</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </form>
+</div>
